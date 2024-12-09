@@ -1,0 +1,189 @@
+body, html {
+  margin:0; padding:0;
+  font-family:sans-serif;
+  background:#222;
+  color:#fff;
+  text-align:center;
+}
+
+#error {
+  color: red;
+}
+
+#menuContainer {
+  padding: 20px;
+}
+
+h1 {
+  color: #ffeb3b;
+}
+
+#error {
+  color:red;
+}
+
+#lobby-list-section, #lobby-section {
+  margin:20px auto;
+  background:#333;
+  padding:20px;
+  border-radius:5px;
+  width:300px;
+}
+
+#lobbyList {
+  list-style:none;
+  padding:0;
+  margin:10px 0;
+  max-height:150px;
+  overflow:auto;
+  background:#444;
+  border-radius:5px;
+}
+
+#lobbyList li {
+  padding:5px;
+  cursor:pointer;
+}
+
+#lobbyList li:hover {
+  background:#555;
+}
+
+#lobbyError {
+  margin-top:20px;
+  color:red;
+}
+
+input {
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  width:80%;
+}
+
+button {
+  padding:10px 20px;
+  border:none;
+  border-radius:5px;
+  background:#2196F3;
+  color:#fff;
+  font-size:16px;
+  cursor:pointer;
+  margin-top:10px;
+}
+button:hover {
+  background:#1976D2;
+}
+
+#scoreboard {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  background:rgba(0,0,0,0.8);
+  padding:30px;
+  border-radius:10px;
+  z-index:2;
+  width:300px;
+}
+
+#scoreList {
+  list-style:none;
+  padding:0; margin:20px 0;
+}
+
+#scoreList li {
+  font-size:18px;
+  margin:5px 0;
+}
+
+#gameCanvas {
+  margin:20px auto;
+  display:block;
+  border:2px solid #333;
+}
+
+/* Live in-game scoreboard top-right */
+#inGameScoreboard {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: left;
+}
+
+#inGameScoreboard h3 {
+  margin:0 0 10px;
+  font-size:16px;
+  color:#ffeb3b;
+}
+
+#inGameScoreList {
+  list-style:none;
+  padding:0; margin:0;
+}
+
+#inGameScoreList li {
+  font-size:14px;
+  margin:5px 0;
+  color:#fff;
+}
+
+/* Chat container on the right side during gameplay */
+#chatContainer {
+  position: absolute;
+  top: 20px;
+  right: 200px; /* So it doesn't overlap the scoreboard */
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: left;
+}
+
+#chatContainer h3 {
+  margin:0 0 10px;
+  font-size:16px;
+  color:#ffeb3b;
+}
+
+#chatMessages {
+  height: 200px;
+  overflow-y:auto;
+  background:#333;
+  border-radius:5px;
+  padding:10px;
+  margin-bottom:10px;
+}
+
+#chatMessages p {
+  font-size:14px;
+  margin:5px 0;
+  color:#fff;
+}
+
+#chatInput {
+  width: calc(100% - 10px);
+  padding:5px;
+  border:none;
+  border-radius:5px;
+  margin-bottom:5px;
+  font-size:14px;
+}
+
+#chatSendBtn {
+  width:100%;
+  padding:5px;
+  background:#2196F3;
+  color:#fff;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  font-size:14px;
+}
+
+#chatSendBtn:hover {
+  background:#1976D2;
+}

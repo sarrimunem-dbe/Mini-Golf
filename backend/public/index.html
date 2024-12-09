@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Public Lobby Mini Golf with Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="menuContainer">
+  <h1>Public Lobby Mini Golf</h1>
+  <div id="lobby-section">
+    <h2>Create Lobby</h2>
+    <input type="text" id="createLobbyName" placeholder="Lobby Name"/>
+    <br><br>
+    <button id="createLobbyBtn">Create</button>
+  </div>
+
+  <div id="lobby-list-section">
+    <h2>Join Lobby</h2>
+    <ul id="lobbyList"></ul>
+    <input type="text" id="playerNameInput" placeholder="Your Name"/>
+    <br>
+    <button id="joinSelectedBtn">Join Selected Lobby</button>
+  </div>
+  <p id="lobbyError" class="error"></p>
+</div>
+
+<div id="scoreboard" style="display:none;">
+  <h2>Scoreboard</h2>
+  <p id="winnerDisplay"></p>
+  <ul id="scoreList"></ul>
+  <button id="continueBtn">Continue</button>
+</div>
+
+<div id="inGameScoreboard" style="display:none;">
+  <h3>Players</h3>
+  <ul id="inGameScoreList"></ul>
+</div>
+
+<!-- Chat Container -->
+<div id="chatContainer" style="display:none;">
+  <h3>Chat</h3>
+  <div id="chatMessages"></div>
+  <input type="text" id="chatInput" placeholder="Type a message..."/>
+  <button id="chatSendBtn">Send</button>
+</div>
+
+<canvas id="gameCanvas" width="800" height="600" style="display:none;"></canvas>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>
